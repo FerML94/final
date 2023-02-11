@@ -1,0 +1,20 @@
+.presentacion {
+    background-image: url(../imgs/presentacion.jpg);
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     h1 { 
+        color: rgb(48, 104, 153);
+        padding-inline: 10px;
+        size: 20vh;
+        font-size: 6rem;
+        font-style: italic;
+        line-height: 1;
+        text-shadow:4px 4px #fafafa;
+    }
+}

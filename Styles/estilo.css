@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(95, 80, 110);
+  gap: 20px;
+  font-size: 40px;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header .logo {
+  width: 150px;
+  justify-content: space-between;
+}
+header .nav_menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+header .nav_menu .menu {
+  display: flex;
+  font-family: "Playfair Display", serif;
+  list-style: none;
+  gap: 25px;
+}
+header .nav_menu .menu .menu_li {
+  color: rgb(33, 123, 201);
+  text-decoration: none;
+}
+header .nav_menu .menu .menu_li:hover {
+  color: #ffffff;
+  border: 5px solid #000000;
+}
+
+.presentacion {
+  background-image: url(../imgs/presentacion.jpg);
+  background-repeat: no-repeat;
+  height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentacion h1 {
+  color: rgb(48, 104, 153);
+  padding-inline: 10px;
+  size: 20vh;
+  font-size: 6rem;
+  font-style: italic;
+  line-height: 1;
+  text-shadow: 4px 4px #fafafa;
+}
+
+.posts {
+  display: flex;
+  color: rgb(33, 123, 201);
+  padding: 50px;
+  gap: 50px;
+}
+.posts .div_post {
+  background-color: rgb(95, 80, 110);
+  border: #000000;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+}
+.posts .div_acomodo {
+  padding: 0 20px 20px 20px;
+}
+.posts .div_acomodo .img_post {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.posts .div_acomodo .boton_post {
+  border-radius: 5px;
+}
+
+.cajero {  
+  height: 100vh;
+  background-color: blueviolet;
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+  "img1 img2 img3 img4"
+  "img5 img6 img7 img8";
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat (4,1fr);
+  border: 5px solid rgb(0,0,0);
+  gap: 20px;
+}
+
+.cajas {   
+ display: grid;
+ height: auto; 
+ background-size:cover;
+ background-position:center ;
+ border: 5px solid rgb(55, 16, 227);
+ align-items: center;
+ justify-content: center;
+ font-size: x-large;
+
+}  
+.caja1{
+ grid-area: img1;
+ background-image: url(../imgs/cuadro.jpg);   
+}
+
+.caja2{
+ grid-area: img2;
+ background-image:url(../imgs/dino.jpg);
+} 
+.caja3{
+ grid-area: img3;
+ background-image:url(../imgs/giogio.jpg);
+} 
+.caja4{
+ grid-area: img4;
+ background-image:url(../imgs/luffy.jpg);
+} 
+.caja5{
+ grid-area: img5;
+ background-image:url(../imgs/oso.jpg);
+} 
+.caja6{
+ grid-area: img6;
+ background-image:url(../imgs/perritos.jpg);
+} 
+.caja7{
+ grid-area: img7;
+ background-image:url(../imgs/sheng.jpg);
+} 
+.caja8{
+ grid-area: img8;
+ background-image:url(../imgs/trunks.jpg);
+} 
+
+.h1_galeria{
+  color: rgb(48, 104, 153);
+  padding-inline: 10px;
+  size: 10vh;
+  font-size: 4rem;
+  font-style: italic;
+  text-align: center;
+}
+@media screen and (max-width:500px) {
+
+ .cajero {    
+  display: flex;     
+ flex-direction: column;   
+ }
+ .cajas { 
+ flex: 1;
+ }
+}
+
+
+/*# sourceMappingURL=estilo.css.map */

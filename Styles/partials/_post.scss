@@ -1,0 +1,35 @@
+.posts { 
+    display: flex;
+    color:$secondcolor;
+    padding: 50px;
+    gap: 50px;
+
+    .div_post{
+        background-color:$maincolor;
+        border: #000000;
+        border-radius: 50px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex: 1;
+     }
+     .div_acomodo{
+        padding:0 20px 20px 20px;
+     
+        .img_post { 
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+         }
+         .boton_post {
+            border-radius: 5px;
+              
+             }
+     }
+          
+}
+       
